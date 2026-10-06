@@ -1,4 +1,4 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const { NotImplementedError } = require('../lib');
 
 /**
  * Given matrix, a rectangular matrix of integers,
@@ -16,6 +16,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  * The result should be 9
  */
+
 function getMatrixElementsSum(matrix) {
   if (!matrix) return 0;
   if (!matrix[0])return 0;

@@ -1,4 +1,4 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const { NotImplementedError } = require('../lib');
 
 /**
  * Given a number, replace this number with
@@ -12,6 +12,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For 91, the result should be 1 (9 + 1 = 10, 1 + 0 = 1)
  *
  */
+
 function getSumOfDigits(n) {
   while (n >= 10) {
     n = n.toString().split('').reduce((sum, digit) => sum + Number(digit), 0);

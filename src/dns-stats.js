@@ -1,4 +1,4 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const { NotImplementedError } = require('../lib');
 
 /**
  * Given an array of domains, return the object with the appearances of the DNS.
@@ -22,6 +22,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * }
  *
  */
+
 function getDNSStats(domains) {
   const result = {};
 

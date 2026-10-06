@@ -1,4 +1,4 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const { NotImplementedError } = require('../lib');
 
 /**
  * Given a string, return its encoding version.
@@ -10,6 +10,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For aabbbc should return 2a3bc
  *
  */
+
 function encodeLine(str) {
   let count = 1;
   let result = [];
